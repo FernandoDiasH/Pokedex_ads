@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PokemonDetailsActivity">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage"
+        tools:text="Name" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvType1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvType2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:text="TYPE1" />
+
+    <TextView
+        android:id="@+id/tvType3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Status"
+        app:layout_constraintEnd_toStartOf="@+id/tvType19"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvType1" />
+
+    <TextView
+        android:id="@+id/tvType19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Habilidades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvStatsValue1"
+        app:layout_constraintTop_toBottomOf="@+id/tvType2"
+        tools:text="Habilidades" />
+
+    <TextView
+        android:id="@+id/tvType23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Movimentos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvStatsValue4"
+        app:layout_constraintTop_toBottomOf="@+id/tvabilitii2"
+        tools:text="Movimentos" />
+
+    <TextView
+        android:id="@+id/tvabilitii2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvType19"
+        tools:text="Habilidade2" />
+
+    <TextView
+        android:id="@+id/tvabilitii1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvabilitii2"
+        app:layout_constraintStart_toEndOf="@+id/tvStatsValue2"
+        app:layout_constraintTop_toBottomOf="@+id/tvType19"
+        tools:text="Habilidade1" />
+
+    <TextView
+        android:id="@+id/tvMove1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvStatsValue4"
+        app:layout_constraintTop_toBottomOf="@+id/tvType23"
+        tools:text="Movimento 1" />
+
+    <TextView
+        android:id="@+id/tvMove3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvStatsValue6"
+        app:layout_constraintTop_toBottomOf="@+id/tvMove2"
+        tools:text="Movimento 1" />
+
+    <TextView
+        android:id="@+id/tvMove2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvStatsValue6"
+        app:layout_constraintTop_toBottomOf="@+id/tvMove1"
+        tools:text="Movimento 1" />
+
+    <TextView
+        android:id="@+id/tvStatsNome1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvType3"
+        tools:text="status 1" />
+
+    <TextView
+        android:id="@+id/tvStatsValue1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tvStatsNome1"
+        app:layout_constraintTop_toBottomOf="@+id/tvType3"
+        tools:text="status 1" />
+
+    <TextView
+        android:id="@+id/tvStatsValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tvStatsNome2"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatsValue1"
+        tools:text="status 1" />
+
+    <TextView
+        android:id="@+id/tvStatsValue3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tvStatsNome3"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatsValue2"
+        tools:text="status 1" />
+
+    <TextView
+        android:id="@+id/tvStatsValue4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tvStatsNome4"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatsValue3"
+        tools:text="status 1" />
+
+    <TextView
+        android:id="@+id/tvStatsValue5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tvStatsNome5"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatsValue4"
+        tools:text="status 1" />
+
+    <TextView
+        android:id="@+id/tvStatsValue6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tvStatsNome6"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatsValue5"
+        tools:text="status 1" />
+
+    <TextView
+        android:id="@+id/tvStatsNome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatsNome1"
+        tools:text="Status 2" />
+
+    <TextView
+        android:id="@+id/tvStatsNome5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatsNome4"
+        tools:text="Status 5" />
+
+    <TextView
+        android:id="@+id/tvStatsNome6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatsNome5"
+        tools:text="Status 6" />
+
+    <TextView
+        android:id="@+id/tvStatsNome4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatsNome3"
+        tools:text="Status 4" />
+
+    <TextView
+        android:id="@+id/tvStatsNome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatsNome2"
+        tools:text="Status 3" />
+
+    <TextView
+        android:id="@+id/tvType2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvType1"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:text="TYPE2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
